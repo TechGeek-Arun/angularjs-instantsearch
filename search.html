@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<link href="css/bootstrap.min.css" rel="stylesheet"  type="text/css" />
+<link href="css/search.css" rel="stylesheet"  type="text/css" />
+<script src="js/angular.min.js"></script>
+<script src="js/search.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+
+<!-- Initialize a new AngularJS app and associate it with a module named "appSearch"-->
+<body ng-app="appSearch">
+
+<p><a href="#!header"><h1 style="text-align: center; background-color: black;color: white;">INSTANT SEARCH</h1></a></p>
+
+
+<!-- Initialize a new AngularJS controler "appSearchController"-->
+<div ng-controller="appSearchController">
+  
+    <div class="bar">
+        <!-- Create a binding between the searchString model and the text field -->
+     <a href="#!/"><input type="text" ng-model="searchString" placeholder="Enter your search terms"/></a>
+    </div>
+	
+<!-- list view of data in ng-view directive-->
+  <ng-view></ng-view> 
+  
+</div>
+
+<b>Note : Click on the INSTANT SEARCH and search box to see differenceof ng-view</b>
+
+</body>
+</html>
